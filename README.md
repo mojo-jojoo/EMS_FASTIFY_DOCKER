@@ -1,27 +1,10 @@
 🚀 Exit_BackEND - Enterprise Employee Management System
-https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=nodedotjs&logoColor=white
-https://img.shields.io/badge/TypeScript-5.0+-3178C6?style=for-the-badge&logo=typescript&logoColor=white
-https://img.shields.io/badge/TypeORM-0.3+-FE0902?style=for-the-badge&logo=typeorm&logoColor=white
-https://img.shields.io/badge/PostgreSQL-15+-4169E1?style=for-the-badge&logo=postgresql&logoColor=white
-https://img.shields.io/badge/Docker-24.0+-2496ED?style=for-the-badge&logo=docker&logoColor=white
-https://img.shields.io/badge/Express-4.18+-000000?style=for-the-badge&logo=express&logoColor=white
-
+<p align="center"> <img src="https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js"> <img src="https://img.shields.io/badge/TypeScript-5.0+-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"> <img src="https://img.shields.io/badge/TypeORM-0.3+-FE0902?style=for-the-badge&logo=typeorm&logoColor=white" alt="TypeORM"> <img src="https://img.shields.io/badge/PostgreSQL-15+-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"> <img src="https://img.shields.io/badge/Docker-24.0+-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"> <img src="https://img.shields.io/badge/Express-4.18+-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express"> </p>
 A robust, scalable, and production-ready backend system for enterprise employee management with comprehensive attendance tracking, department management, and secure authentication.
 
+<p align="center"> <img width="1230" height="536" alt="Exit_BackEND Architecture" src="https://github.com/user-attachments/assets/2af6c32d-ff97-450b-b306-cca94adba73b" /> </p>
 📋 Table of Contents
 ✨ Features
-
-🔐 Authentication & Authorization
-
-👥 Employee Management
-
-📊 Attendance System
-
-🏢 Department Management
-
-🐳 Infrastructure
-
-🔧 Development Features
 
 🏗️ Architecture
 
@@ -31,29 +14,13 @@ A robust, scalable, and production-ready backend system for enterprise employee 
 
 🚀 Quick Start
 
-Option 1: Local Development
-
-Option 2: Docker Compose
-
 📚 API Documentation
 
 🗄️ Database Schema
 
-🐳 Docker Deployment
+⚡ Performance Optimizations
 
 💻 Development
-
-🧪 Testing
-
-🔧 Environment Variables
-
-📁 Project Structure
-
-🔄 TypeORM Configuration
-
-🔐 Authentication Flow
-
-⚡ Performance Optimizations
 
 🤝 Contributing
 
@@ -122,9 +89,9 @@ ESLint & Prettier configuration - Code quality assurance
 
 Environment-based configurations - Flexible deployment
 
-Comprehensive logging - Detailed system monitoring
+Comprehensive logging - Detailed system monitoring.
 
-
+<img width="336" height="338" alt="image" src="https://github.com/user-attachments/assets/0795f26e-05ce-4239-9887-2af521ff8b5e" />
 
 Data Flow:
 
@@ -132,20 +99,10 @@ Client Request → Validation → Authentication → Authorization →
 Business Logic → Database Operation → Response Transformation → Client
 
 
+
 🛠️ Tech Stack
 Core Technologies
-Runtime: Node.js 18+ (LTS)
-
-Language: TypeScript 5.0+
-
-Framework: Express.js 4.18+
-
-ORM: TypeORM 0.3.17+
-
-Database: PostgreSQL 15+
-
-Container: Docker 24.0+, Docker Compose
-
+<p align="center"> <img src="https://img.shields.io/badge/Node.js-18%2B-339933?style=flat&logo=nodedotjs&logoColor=white" alt="Node.js"> <img src="https://img.shields.io/badge/TypeScript-5.0%2B-3178C6?style=flat&logo=typescript&logoColor=white" alt="TypeScript"> <img src="https://img.shields.io/badge/Express-4.18%2B-000000?style=flat&logo=express&logoColor=white" alt="Express"> <img src="https://img.shields.io/badge/TypeORM-0.3%2B-FE0902?style=flat&logo=typeorm&logoColor=white" alt="TypeORM"> <img src="https://img.shields.io/badge/PostgreSQL-15%2B-4169E1?style=flat&logo=postgresql&logoColor=white" alt="PostgreSQL"> <img src="https://img.shields.io/badge/Docker-24.0%2B-2496ED?style=flat&logo=docker&logoColor=white" alt="Docker"> </p>
 Key Dependencies
 @types/* - Type definitions for development
 
@@ -166,65 +123,86 @@ dotenv - Environment management
 📦 Prerequisites
 System Requirements
 Node.js 18.0.0 or higher
+
 PostgreSQL 15 or higher
+
 Docker 24.0.0 or higher (optional)
+
 npm 9.0.0 or higher
+
 Git 2.35.0 or higher
 
-Recommended Tools:
+Recommended Tools
+<p align="center"> <a href="https://www.postman.com/"> <img src="https://img.shields.io/badge/Postman-API%20Testing-FF6C37?style=flat&logo=postman&logoColor=white" alt="Postman"> </a> <a href="https://tableplus.com/"> <img src="https://img.shields.io/badge/TablePlus-Database%20GUI-000000?style=flat" alt="TablePlus"> </a> <a href="https://www.docker.com/products/docker-desktop/"> <img src="https://img.shields.io/badge/Docker%20Desktop-Containerization-2496ED?style=flat&logo=docker&logoColor=white" alt="Docker Desktop"> </a> <a href="https://code.visualstudio.com/"> <img src="https://img.shields.io/badge/VS%20Code-Editor-007ACC?style=flat&logo=visualstudiocode&logoColor=white" alt="VS Code"> </a> </p>
+🚀 Quick Start
+Option 1: Local Development
+bash
+# Clone the repository
+git clone https://github.com/yourusername/Exit_BackEND.git
+cd Exit_BackEND
 
-Postman - API testing
-TablePlus - Database GUI
-Docker Desktop
-VS Code with TypeScript extensions
+# Install dependencies
+npm install
 
+# Configure environment
+cp .env.example .env
+# Edit .env with your configuration
 
+# Start PostgreSQL
+docker run --name exit-postgres -e POSTGRES_PASSWORD=yourpassword \
+  -p 5432:5432 -d postgres:15
 
+# Run migrations
+npm run typeorm migration:run
 
+# Start development server
+npm run dev
+# Server runs on http://localhost:3000
+Option 2: Docker Compose (All-in-One)
+bash
+# Clone and setup
+git clone https://github.com/yourusername/Exit_BackEND.git
+cd Exit_BackEND
+cp .env.example .env
 
-🗄️ Database Schema
-Entity Relationship Diagram
+# Start all services
+docker-compose up -d
+
+# Check services
+docker-compose ps
+
+# View logs
+docker-compose logs -f app
+Access:
+
+API: http://localhost:3000
+
+PostgreSQL: localhost:5432
+
+Adminer: http://localhost:8080
+
+📚 API Documentation
+Base URL
 text
-┌─────────────────┐      ┌─────────────────┐      ┌─────────────────┐
-│    Employee     │      │   Attendance    │      │   Department    │
-├─────────────────┤      ├─────────────────┤      ├─────────────────┤
-│ id (PK)         │◄────┤ employee_id (FK) │      │ id (PK)         │
-│ name            │      │ check_in        │      │ name            │
-│ email (UNIQUE)  │      │ check_out       │      │ manager_id (FK) │
-│ password_hash   │      │ hours_worked    │      │ budget          │
-│ department_id(FK)│────►│ date            │      │ created_at      │
-│ role            │      │ status          │      └─────────────────┘
-│ status          │      └─────────────────┘               ▲
-│ created_at      │                                        │
-│ updated_at      │                                 ┌──────┘
-└─────────────────┘                                 │
-         ▲                                          │
-         │                                          │
-         └──────────────────────────────────────────┘
-               (Employee can manage Department)
+http://localhost:3000/api
+Authentication Endpoints
+Method	Endpoint	Description	Auth Required
+POST	/auth/register	Register new user	❌
+POST	/auth/login	User login	❌
+POST	/auth/refresh	Refresh JWT token	✅
+POST	/auth/logout	User logout	✅
+GET	/auth/profile	Get user profile	✅
+Employee Management
+Method	Endpoint	Description	Auth Required
+GET	/employees	Get all employees	✅
+GET	/employees/:id	Get employee by ID	✅
+POST	/employees	Create new employee	✅
+PUT	/employees/:id	Update employee	✅
+DELETE	/employees/:id	Delete employee	✅
+GET	/employees/search	Search employees	✅
 
 
-🏗️ Architecture
-┌─────────────────────────────────────────┐
-│            Presentation Layer           │
-│  Controllers ← Routes ← Middleware     │
-└─────────────────────────────────────────┘
-                  ↓
-┌─────────────────────────────────────────┐
-│            Business Logic Layer         │
-│            Services (Use Cases)         │
-└─────────────────────────────────────────┘
-                  ↓
-┌─────────────────────────────────────────┐
-│            Data Access Layer            │
-│  Repositories ← Entities ← TypeORM      │
-└─────────────────────────────────────────┘
-                  ↓
-┌─────────────────────────────────────────┐
-│            Infrastructure Layer         │
-│        Database ← External Services     │
-└─────────────────────────────────────────┘
-
+<img width="511" height="313" alt="image" src="https://github.com/user-attachments/assets/f62d896e-b0be-49f8-8321-dc9c82323877" />
 
 ⚡ Performance Optimizations
 Database Optimization
