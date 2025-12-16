@@ -1,0 +1,38 @@
+{
+  "name": "employee-system",
+  "version": "1.0.0",
+  "description": "Employee Management System with TypeORM, Fastify, Docker",
+  "main": "src/app.ts",
+  "scripts": {
+    "dev": "nodemon src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "docker:build": "docker build -t employee-system .",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f",
+    "docker:restart": "docker-compose restart",
+    "docker:clean": "docker-compose down -v --remove-orphans",
+    "docker:exec": "docker exec -it employee-app sh",
+    "docker:db": "docker exec -it employee-db psql -U empadmin -d employeedb"
+  },
+  "dependencies": {
+    "@fastify/cors": "^9.0.1",
+    "@fastify/helmet": "^11.1.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.6.1",
+    "fastify": "^4.29.1",
+    "jsonwebtoken": "^9.0.3",
+    "pg": "^8.16.3",
+    "reflect-metadata": "^0.1.14",
+    "typeorm": "^0.3.28"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^20.19.27",
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
