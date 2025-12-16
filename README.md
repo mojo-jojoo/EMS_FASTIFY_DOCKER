@@ -2,7 +2,7 @@
 <p align="center"> <img src="https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js"> <img src="https://img.shields.io/badge/TypeScript-5.0+-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"> <img src="https://img.shields.io/badge/TypeORM-0.3+-FE0902?style=for-the-badge&logo=typeorm&logoColor=white" alt="TypeORM"> <img src="https://img.shields.io/badge/PostgreSQL-15+-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"> <img src="https://img.shields.io/badge/Docker-24.0+-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"> <img src="https://img.shields.io/badge/Express-4.18+-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express"> </p>
 A robust, scalable, and production-ready backend system for enterprise employee management with comprehensive attendance tracking, department management, and secure authentication.
 
-<p align="center"> <img width="1230" height="536" alt="Exit_BackEND Architecture" src="https://github.com/user-attachments/assets/2af6c32d-ff97-450b-b306-cca94adba73b" /> </p>
+
 📋 Table of Contents
 ✨ Features
 
